@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+==================================================
+    Table of Contents / Sommaire
+==================================================
+    // Extra small screen / phone           XS 0
+    // Small screen / phone                 SM 34em
+    // Medium screen / tablet               MD 48em
+    // Large screen / desktop               LG 62em
+    // Extra large screen / wide desktop    XL 75em
+    // Special Pixel Ratio
+*/
+
+/*
+==================================================
+	// Extra small screen / phone           XS 0
+==================================================
+*/
+body::before {
+	content:"XS";
+	display:block;
+	position:fixed;
+	bottom:0;
+	right:0;
+	background:#222;
+	color:#FFF;
+	padding:.35rem;
+	z-index:100000;
+	margin:0 .2rem .2rem 0;
+	opacity : .3;
+
+}
+
+.testGrid *[class*=col] {
+    background: #E5E5E5;
+}
+
+/*
+==================================================
+    // Small screen / phone                 SM 34em
+==================================================
+*/
+@media (min-width: 34em) {
+body::before {
+	content:"SM";
+}
+}
+
+/*
+==================================================
+    // Medium screen / tablet               MD 48em
+==================================================
+*/
+@media (min-width: 48em) {
+body::before {
+	content:"MD";
+}
+}
+
+/*
+==================================================
+    // Large screen / desktop               LG 62em
+==================================================
+*/
+@media (min-width: 62em) {
+body::before {
+	content:"LG";
+}
+}
+
+/*
+==================================================
+    // Extra large screen / wide desktop    XL 75em
+==================================================
+*/
+@media (min-width: 75em) {
+body::before {
+	content:"XL";
+}
+}
+
+
